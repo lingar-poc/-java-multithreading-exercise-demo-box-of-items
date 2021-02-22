@@ -2,5 +2,5 @@ package program;
 
 public class Box {
 
-	public final int itemsLimit = 50;
+	public final int itemsLimit = 30;
 }
