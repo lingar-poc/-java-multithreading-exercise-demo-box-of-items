@@ -26,4 +26,6 @@ Filling time took N second (when N represent the number of seconds)
 
 If you want to get the solution checkout Branch B
 
+* You can see the "Hint" class for getting some idea
+
  
