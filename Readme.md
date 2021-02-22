@@ -6,9 +6,10 @@ as you can see each Box can contain 30 items.
 
 And each item generator can generates only 20 items. 
 
-You have two steps - 
-1- Make a service that will take the box and will fill it with items until it's full. 
-First do it with simple way of single threading. 
+## You have two steps - 
+### Step 1
+1- See the service called "FillingMachine"  that will take a box and will fill it with items until it's full. 
+First do it with simple way  of single threading. 
 - Make output of the time that take the box to become full. 
 - You don't need to put the items in the order. 
 
@@ -18,7 +19,8 @@ the out should be :
 "Item = [item #1, item #2 ... (30 item)]"
 Filling time took N second (when N represent the number of seconds)
 
-#### You can skip this step and found the solution in the A branch. 
+##### You can skip this step and found the solution in the A branch. 
+### Step 2
 
 2- Improve the time of filling by using two generator with multithreading. For simplicity Use only two generator.  
 
