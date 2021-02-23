@@ -10,7 +10,8 @@ public class RunMe {
 		// ...
 		
 		// fill the box by service from filling machine service.
-		FillingMachine.fillBySingleThread(box1);
+//		FillingMachine.fillBySingleThread(box1);
+		FillingMachine.fillByMultiThreads(box1);
 		
 		// Output the box items when finishing 
 		System.out.println(box1.items);

@@ -16,7 +16,7 @@ public class Hint {
 }
 
 class GuruThread3 implements Runnable {
-	Thread guruthread;
+	Thread guruthread;//this holding the running of the class. 
 	private String guruname;
 
 	GuruThread3(String name) {
