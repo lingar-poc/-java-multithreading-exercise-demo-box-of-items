@@ -31,8 +31,16 @@ public class FillingMachine {
 		ItemsGenerator i2 = new ItemsGenerator("2nd Generator");
 		BoxFillingMultithreads b1 = new BoxFillingMultithreads(box, i1);
 		BoxFillingMultithreads b2 = new BoxFillingMultithreads(box, i2);
-		b1.run();
-		b2.run();
+		b1.start();
+		b2.start();
+		try {
+			b1.process.join();
+			b2.process.join();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+//		b1.run();
+//		b2.run();
 		System.out.println("here ?? ");
 
 

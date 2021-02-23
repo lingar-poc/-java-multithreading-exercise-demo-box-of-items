@@ -38,6 +38,7 @@ public class BoxFillingMultithreads implements Runnable {
 	}
 	public void start() {
 		System.out.println("Thread started " + process.getState() );
+		process.start();
 
 	}
 

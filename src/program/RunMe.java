@@ -8,20 +8,19 @@ public class RunMe {
 		// create a timer
 		long start = System.currentTimeMillis();
 		// ...
-		
+
 		// fill the box by service from filling machine service.
 //		FillingMachine.fillBySingleThread(box1);
 		FillingMachine.fillByMultiThreads(box1);
-		
-		// Output the box items when finishing 
+
+		// Output the box items when finishing
 		System.out.println(box1.items);
-		
-		// Output the time it tool 
+
+		// Output the time it tool
 		long finish = System.currentTimeMillis();
 		long timeElapsed = finish - start;
-		System.out.println("Time it's took - about " + timeElapsed/1000 + " seconds");
+		System.out.println("Time it's took - about " + timeElapsed / 1000 + " seconds");
 //
-		
-		
+
 	}
 }

@@ -19,7 +19,6 @@ public class ItemsGenerator implements Runnable{
 		}
 		serialNum++;
 		itemsGenerated++;
-		System.out.println(id + " generating item...");
 
 		
 		try {
@@ -28,6 +27,8 @@ public class ItemsGenerator implements Runnable{
 		} catch (Exception e) {
 			
 		}
+		System.out.println(id + " generating item..." + serialNum);
+
 		return "item #" + serialNum;
 	}
 
