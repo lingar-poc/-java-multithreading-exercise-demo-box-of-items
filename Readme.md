@@ -7,6 +7,7 @@ as you can see each Box can contain 30 items.
 And each item generator can generates only 20 items. 
 
 ## You have two steps - 
+**You can see in this branch that step 1 is ready **
 ### Step 1
 1- See the service called "FillingMachine"  that will take a box and will fill it with items until it's full. 
 First do it with simple way  of single threading. 
