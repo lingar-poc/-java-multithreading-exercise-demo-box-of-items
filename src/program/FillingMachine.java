@@ -24,7 +24,7 @@ public class FillingMachine {
 	}
 
 	public static Box fillByMultiThreads(Box box) {
-		// TODO - with multi theards
+		// Done  - with multi theards
 		ItemsGenerator i1 = new ItemsGenerator("1st Generator");
 		ItemsGenerator i2 = new ItemsGenerator("2nd Generator");
 		BoxFillingMultithread b1 = new BoxFillingMultithread(box, i1);

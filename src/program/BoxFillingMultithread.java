@@ -12,7 +12,6 @@ public class BoxFillingMultithread implements Runnable {
 		this.box = box;
 		this.itemsGenerator = itemsGenerator;
 		this.process = new Thread(this,"process of " + itemsGenerator.id);
-//		this.run();
 
 	}
 
