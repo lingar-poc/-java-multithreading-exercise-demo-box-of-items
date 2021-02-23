@@ -6,23 +6,21 @@ package program;
 public class FillingMachine {
 	static String item;
 	public static Box fillBySingleThread(Box box) {
-		ItemsGenerator i1 = new ItemsGenerator();
-		String item = i1.generates();
-		while (item != null) {
-			box.items.add(item);
-			item = i1.generates();
-		}
+		ItemsGenerator i1 = new ItemsGenerator("1st Generator");
+		ItemsGenerator i2 = new ItemsGenerator("2nd Generator");
+
 		
-		ItemsGenerator i2 = new ItemsGenerator();
-		item = i2.generates();
-		while (item != null) {
-			box.items.add(item);
-			item = i2.generates();
+		
+		while (true) {
+			box.items.add( i1.generates());
+			box.items.add( i2.generates());
+
 			if (box.items.size() >= box.itemsLimit) {
 				break;
 			}
 		}
-		// TODO - with single theard(step 1)
+		
+		// DONE - with single theard(step 1)
 		return null;
 	}
 

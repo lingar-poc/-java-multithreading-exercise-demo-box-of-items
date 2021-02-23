@@ -5,13 +5,21 @@ public class ItemsGenerator {
 	public static int serialNum = 0; 
 	public int itemsGenerated = 0;
 	public final int maxItems = 20;
+	public String id = "noid";
+	public ItemsGenerator() {
+		
+	}
+	
+	public ItemsGenerator(String id) {
+		this.id = id;
+	}
 	public String generates() {
 		if (itemsGenerated >= maxItems) {
 			return null;
 		}
 		serialNum++;
 		itemsGenerated++;
-		System.out.println("generating item...");
+		System.out.println(id + " generating item...");
 
 		
 		try {
