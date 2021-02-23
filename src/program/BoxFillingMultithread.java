@@ -1,9 +1,13 @@
 package program;
-
-public class BoxFillingMultithreads implements Runnable {
+/**
+ * the box filling thread 
+ * @author Lingar
+ *
+ */
+public class BoxFillingMultithread implements Runnable {
 	Box box;
 
-	public BoxFillingMultithreads(Box box, ItemsGenerator itemsGenerator) {
+	public BoxFillingMultithread(Box box, ItemsGenerator itemsGenerator) {
 		super();
 		this.box = box;
 		this.itemsGenerator = itemsGenerator;
@@ -24,11 +28,10 @@ public class BoxFillingMultithreads implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
-		System.out.println("running...");
+		System.out.println("Filling process started running...");
 		String item = itemsGenerator.generates();
 		while (itemsGenerator.itemsGenerated <= itemsGenerator.maxItems) {
 			box.items.add(item);
-//			box.items.add(i2.generates());
 			 item = itemsGenerator.generates();
 			if (box.items.size() >= box.itemsLimit) {
 				break;

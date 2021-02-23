@@ -1,9 +1,10 @@
 package program;
 
-public class Try2 {
+public class SelfDependExample {
 
 	public static void main(String[] args) {
 		/*
+		 *  Example of the multithreading flow in one file - for your own convenience 
 		 * The example was taken from here :
 		 * https://www.guru99.com/multithreading-java.html
 		 */

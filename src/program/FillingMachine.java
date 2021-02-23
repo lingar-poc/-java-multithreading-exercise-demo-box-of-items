@@ -23,28 +23,22 @@ public class FillingMachine {
 		return null;
 	}
 
-	// Hint - not necessary that this method should implements the Multithreading
-	// approach. It could be some other component of the program.
-	public static Box fillByMultiThreads(Box box) {// Need to be
+	public static Box fillByMultiThreads(Box box) {
 		// TODO - with multi theards
 		ItemsGenerator i1 = new ItemsGenerator("1st Generator");
 		ItemsGenerator i2 = new ItemsGenerator("2nd Generator");
-		BoxFillingMultithreads b1 = new BoxFillingMultithreads(box, i1);
-		BoxFillingMultithreads b2 = new BoxFillingMultithreads(box, i2);
+		BoxFillingMultithread b1 = new BoxFillingMultithread(box, i1);
+		BoxFillingMultithread b2 = new BoxFillingMultithread(box, i2);
 		b1.start();
 		b2.start();
+		//This causing the afterward execution to be hold until the threads finishing running.
 		try {
 			b1.process.join();
 			b2.process.join();
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-//		b1.run();
-//		b2.run();
-		System.out.println("here ?? ");
 
-
-		
 		return null;
 	}
 
