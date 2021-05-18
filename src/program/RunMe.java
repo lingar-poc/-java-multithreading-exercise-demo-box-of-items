@@ -2,6 +2,11 @@ package program;
 
 public class RunMe {
 	public static void main(String[] args) {
+		
+		System.out.println("Multithreading - Demo by Exercise. \n"
+				+ "Please see the readme.md for more details.\n"
+				+ "Here you can see the first step of creating the process ready.\n"
+				+ "Notice that the process took about 15 seconds.");
 		// TODO:
 		// create here a box
 		Box box1 = new Box();
