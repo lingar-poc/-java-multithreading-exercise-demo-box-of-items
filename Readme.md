@@ -1,6 +1,12 @@
 # Multithreading Exercise 
 In this repo you can do a simple mutlithreading exercise. 
 
+*Notice - you can pass over this exercise by the order - master and branch 0 are on the start of the exercise,*
+*Branch A is my implementation to the task with single Thread. And at branch-B there is the solution by mutli-threading. *
+*Feel free to send feedbacks to yimprogramming@gmail.com*
+
+**Run the RunMe class**
+
 ## The Real-World Problem 
 Let's say we have a factory that produce some whatever product you imagine (a snakes for example).
 So we are demonstrate the producing-process in simple way. Use your imagaination. It's simple. 
@@ -25,7 +31,7 @@ You can see at runMe class that the process of filling 1 box took about 15 secon
 since, the ItemsGenerator2 is waiting to the first Generator to finish. There is no prevention that they will run together,
 but this doesn't happen since all is running by single thread.
 
-## Your Task - fix the problem and Improve filling time- 
+## Your Task - Do the task fix the problem and Improve filling time- 
 ### Step 1 - be sure you get the things
 See the service called "FillingMachine"  that will take a box and will fill it with items until it's full. 
 First do it with simple way  of single threading. 
@@ -37,7 +43,7 @@ the out should be :
 "Box is Full"
 "Item = [item #1, item #2 ... (30 item)]"
 Filling time took N second (when N represent the number of seconds)
-**You can see in this branch that step 1 is ready. **
+**You can see in  branch-A that step 1 is ready. **
 
 
 ### Step 2 - TODO
