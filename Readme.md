@@ -4,10 +4,11 @@ In this repo you can do a simple mutlithreading exercise.
 *Notice - you can pass over this exercise by the order - master and branch 0 are on the start of the exercise,*
 *Branch A is my implementation to the task with single Thread. And at branch-B there is the solution by mutli-threading. *
 *Feel free to send feedbacks to yimprogramming@gmail.com*
+**Run the RunMe class**
 
 ## The Real-World Problem 
-Let's say we have a factory that produce some whatever product you imagine (a snakes for example).
-So we are demonstrate the producing-process in simple way. Use your imagaination. It's simple. 
+Let's say we have a factory that produces some whatever product you imagine (snacks for example).
+So we will demonstrate the producing-process in simple way. Use your imagination. It's simple. 
 
 So that factory has "Filling-Machines" that in the process line, fill the boxes.
 See the class program.FillingMachine. As you can see the Machine contains Items Generators as needed. 
