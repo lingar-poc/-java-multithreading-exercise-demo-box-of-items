@@ -12,7 +12,7 @@ public class RunMe {
 		// create a timer
 		// fill the box by service from filling machine service.
 		// Output the box items when finishing 
-		// Output the time it tool 
+		// Output the time it took 
 
 		
 	}
